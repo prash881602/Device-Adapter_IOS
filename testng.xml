@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DeviceAutomationDemo">
+	<parameter name="deviceName" value="Mi A1"></parameter>
+	<parameter name="platformVersion" value="8.1.0"></parameter>
+	<parameter name="udid" value="b4b5e0dd0304"></parameter>
+	<test thread-count="1" name="Test">
+		<!-- <parameter name="url" value="http://127.0.0.1:4723/wd/hub"></parameter> 
+			<parameter name="name" value="MiA1"></parameter> <parameter name="id" value="1234"></parameter> -->
+		<classes>
+			<class
+				name="org.cts.oneautomation.deviceadapter.tests.VerifyBasicFunctionality_Amazon" />
+			<class
+				name="org.cts.oneautomation.deviceadapter.tests.LaunchApplication_Test" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
